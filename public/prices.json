@@ -1,0 +1,39 @@
+[
+    {
+      "id": "1",
+      "name": "Bronze Membership",
+      "price": 19.99,
+      "features": ["Access to basic content", "Standard customer service"]
+    },
+    {
+      "id": "2",
+      "name": "Silver Membership",
+      "price": 29.99,
+      "features": ["Access to premium content", "Priority customer service"]
+    },
+    {
+      "id": "3",
+      "name": "Gold Membership",
+      "price": 39.99,
+      "features": ["Access to all content", "24/7 customer service", "Free delivery"]
+    },
+    {
+      "id": "4",
+      "name": "Platinum Membership",
+      "price": 49.99,
+      "features": ["Access to all content", "24/7 customer service", "Free delivery", "Exclusive discounts"]
+    },
+    {
+      "id": "5",
+      "name": "Diamond Membership",
+      "price": 59.99,
+      "features": ["Access to all content", "24/7 customer service", "Free delivery", "Exclusive discounts", "Early access to new products"]
+    },
+    {
+      "id": "6",
+      "name": "Master Membership",
+      "price": 69.99,
+      "features": ["Access to all content", "24/7 customer service", "Free delivery", "Exclusive discounts", "Early access to new products", "Personalized support"]
+    }
+  ]
+ 
