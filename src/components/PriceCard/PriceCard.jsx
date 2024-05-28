@@ -1,4 +1,5 @@
 import React from 'react';
+import Feature from '../Feature/Feature';
 
 const PriceCard = ({price}) => {
     return (
@@ -8,6 +9,14 @@ const PriceCard = ({price}) => {
                 <span className='text-purple-600 text-lg font-bold'>/month</span>
             </h2>
            <h4 className='text-2xl font-bold text-center'> {price.name}</h4>
+           <p className='font-medium text-white  underline'>Features:  </p>
+           {
+               price.features.map((feature, idx) => <Feature
+               key={idx}
+                feature={feature}
+               ></Feature>)
+           }
+           <button className=''>Buy Now</button>
         </div>
     );
 };
