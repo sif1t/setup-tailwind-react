@@ -8,7 +8,6 @@ function App() {
   return (
     <>
      <Navbar></Navbar>
-     <h1 className=' font-bold'>hello world</h1>
      <PriceList></PriceList>
     </>
   )
