@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
+import { BarChart, Bar, ResponsiveContainer } from 'recharts';
 
 const PhoneBar = () => {
     const [phones, setPhones] = useState([])
@@ -11,12 +12,22 @@ const PhoneBar = () => {
          .then(data => {
             const loadedData = data.data.data;
             console.log(loadedData);
+            const phonesData = loadedData.map = (phone =>{
+                 const parts = phone.slug.split('-');
+                 const price = parseInt(parts[1]);
+                 const phoneInfo = {
+                        name: phone.phone_name,
+                        price: price,
+                 }
+                return phoneInfo;
+            })
+            console.log(phonesData); 
          });
     }, []);
     return (
-        <div>
-            
+        <div>  
+         
         </div>
     );
 };
-export default PhoneBar;
+export default PhoneBar; 
